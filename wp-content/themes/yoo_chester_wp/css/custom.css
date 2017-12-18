@@ -91,7 +91,7 @@ body .gform_wrapper .top_label div.ginput_container {
 
 }
 div#tm-top-nav div.top-left img{height: 126px}
-div#tm-top-nav div.top-middle img{height:113px;margin-top: 27px;margin-left: 26px;}
+div#tm-top-nav div.top-middle img{height:113px;margin-top: 27px;margin-left: 10px;}
 .uk-dropdown-navbar {margin-top:0;background: #fff;color: #000;}
 
 .tm-navbar-container {
@@ -119,9 +119,12 @@ div#tm-top-nav div.top-middle img{height:113px;margin-top: 27px;margin-left: 26p
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-div#tm-top-nav{padding-bottom: 15px;padding-top: 15px;}
 .tm-toolbar{background:#000;}
 .phone_contact_detail{margin: 46px 0 0 111px }
+
+
+/***** Main Navigation Style *****/
+div#tm-top-nav{padding-bottom: 15px;padding-top: 15px;}
 .uk-navbar-nav > li > a{color:#000;background-color: #fff0;padding: 7px 0;height:47px ;border-radius:0;border-bottom: 1px solid rgba(0,0,0,.05);}
 
 div#main-navbar-container{background-color: #fff;padding: 0px;height:47px; border: 1px solid rgba(0,0,0,.1);}
@@ -137,3 +140,5 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 47px;	padding: 0;}
 .tm-navbar .uk-dropdown{border-radius: 0px}
 .uk-nav-navbar > li:hover, .uk-nav-navbar > li:focus{color: #000;background-color:#ddd; background-clip: padding-box;}
 .uk-nav-navbar > li > a:hover, .uk-nav-navbar > li > a:focus{color: #000;}
+
+/******Main Navigation Style - ending ********/
