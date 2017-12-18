@@ -42,7 +42,7 @@ $content = $widget->content;
 $title   = ($widget->showtitle) ? $widget->title : '';
 
 // Set title
-if (in_array($widget->position, array('headerbar', 'toolbar-r' ,'toolbar-l', 'footer'))) {
+if (in_array($widget->position, array('headerbar', 'toolbar-r' ,'toolbar-l','toolbar-m', 'footer'))) {
     $title = '';
 } elseif ($title && !($widget->position == 'menu')) {
     $title = '<h3 class="'.($title_size ? $title_size : 'uk-panel-title').'">'.$icon.$title.'</h3>';

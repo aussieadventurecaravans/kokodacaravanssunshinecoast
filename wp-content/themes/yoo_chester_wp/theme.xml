@@ -15,6 +15,7 @@
         <position settings="assignment">logo-small</position>
         <position settings="title assignment">menu</position>
         <position settings="title assignment">toolbar-l</position>
+        <position settings="title assignment">toolbar-m</position>
         <position settings="title assignment">toolbar-r</position>
         <position settings="assignment">headerbar</position>
         <position settings="assignment">breadcrumbs</position>

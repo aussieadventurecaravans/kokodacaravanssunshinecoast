@@ -1,5 +1,5 @@
 <?php if ($this['widgets']->count('menu + offcanvas + logo-small')) : ?>
-<div class="tm-navbar-container" <?php echo $args['sticky'] ? 'data-uk-sticky="{media: 768, clsactive:\'uk-active uk-navbar-attached\'}"' : ''; ?>>
+<div id="main-navbar-container" class="tm-navbar-container" <?php echo $args['sticky'] ? 'data-uk-sticky="{media: 768, clsactive:\'uk-active uk-navbar-attached\'}"' : ''; ?>>
     <div class="uk-position-relative uk-text-center uk-container uk-container-center">
 
         <?php if ($this['widgets']->count('logo-small + offcanvas')) : ?>
@@ -26,17 +26,17 @@
 
         </nav>
 
-        <?php if ($this['widgets']->count('search + headerbar')) : ?>
+      <!--  <?php /*if ($this['widgets']->count('search + headerbar')) : */?>
         <div class="tm-navbar-right uk-flex uk-flex-middle">
-            <?php if ($this['widgets']->count('search')) : ?>
-            <div class="uk-visible-large"><?php echo $this['widgets']->render('search'); ?></div>
-            <?php endif; ?>
+            <?php /*if ($this['widgets']->count('search')) : */?>
+            <div class="uk-visible-large"><?php /*echo $this['widgets']->render('search'); */?></div>
+            <?php /*endif; */?>
 
-            <?php if ($this['widgets']->count('headerbar')) : ?>
-            <?php echo $this['widgets']->render('headerbar'); ?>
-            <?php endif; ?>
+            <?php /*if ($this['widgets']->count('headerbar')) : */?>
+            <?php /*echo $this['widgets']->render('headerbar'); */?>
+            <?php /*endif; */?>
         </div>
-        <?php endif; ?>
+        --><?php /*endif; */?>
 
     </div>
 </div>

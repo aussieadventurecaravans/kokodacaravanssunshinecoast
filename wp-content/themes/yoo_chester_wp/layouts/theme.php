@@ -17,20 +17,28 @@ include($this['path']->path('layouts:theme.config.php'));
 <?php echo $this['template']->render('head'); ?>
 </head>
 
-<body class="<?php echo $this['config']->get('body_classes'); ?>">
+<div class="<?php echo $this['config']->get('body_classes'); ?>">
 
     <?php if ($this['widgets']->count('toolbar-l + toolbar-r')) : ?>
-    <div class="tm-toolbar uk-clearfix uk-visible-large">
-
-        <?php if ($this['widgets']->count('toolbar-l')) : ?>
-        <div class="uk-float-left"><?php echo $this['widgets']->render('toolbar-l'); ?></div>
-        <?php endif; ?>
-
-        <?php if ($this['widgets']->count('toolbar-r')) : ?>
-        <div class="uk-float-right"><?php echo $this['widgets']->render('toolbar-r'); ?></div>
-        <?php endif; ?>
-
-    </div>
+        <div id="tm-top-nav" class="uk-block tm-block-top-c uk-block-secondary">
+            <div class="uk-container uk-container-center">
+                <section class="uk-grid">
+                    <?php if ($this['widgets']->count('toolbar-l')) : ?>
+                        <div class="top-left uk-width-1-1 uk-width-medium-1-3"><?php echo $this['widgets']->render('toolbar-l'); ?></div>
+                    <?php endif; ?>
+                    <?php if ($this['widgets']->count('toolbar-m')) : ?>
+                        <div class="top-middle uk-width-1-1 uk-width-medium-1-3"><?php echo $this['widgets']->render('toolbar-m'); ?></div>
+                    <?php endif; ?>
+                    <?php if ($this['widgets']->count('toolbar-r')) : ?>
+                    <div class="top-right uk-width-1-1 uk-width-medium-1-3">
+                            <div class="phone_contact_detail">
+                                <?php echo $this['widgets']->render('toolbar-r'); ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                </section>
+            </div>
+        </div>
     <?php endif; ?>
 
     <?php echo $this['template']->render('header.'.$this['config']->get('navbar_template', 'default').'', array('sticky' => $this['config']->get('navbar_sticky', 0))); ?>
@@ -180,6 +188,6 @@ include($this['path']->path('layouts:theme.config.php'));
         <div class="uk-offcanvas-bar"><?php echo $this['widgets']->render('offcanvas'); ?></div>
     </div>
     <?php endif; ?>
-
+</div>
 </body>
 </html>
