@@ -145,3 +145,6 @@ if (strlen($this['config']->get('rss_url',''))) {
 }
 
 $this->output('head');
+
+// output tracking code
+echo $this['config']->get('tracking_code');

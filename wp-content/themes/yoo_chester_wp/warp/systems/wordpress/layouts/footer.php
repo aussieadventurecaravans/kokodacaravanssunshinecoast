@@ -8,6 +8,3 @@
 
 wp_footer();
 do_action('get_footer', array());
-
-// output tracking code
-echo $this['config']->get('tracking_code');
