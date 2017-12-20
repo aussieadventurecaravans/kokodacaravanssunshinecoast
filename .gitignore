@@ -12,6 +12,7 @@
 # WordPress
 *.log
 .htaccess
+error_log
 wp-config.php
 /projects/
 /wp-content/advanced-cache.php
