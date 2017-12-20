@@ -52,9 +52,11 @@ $heading = esc_html( apply_filters( 'woocommerce_product_description_heading', _
 
             <?php //display specification elements ?>
             <div class="uk-margin">
-                <?php foreach($spec['specification_item'] as $spec_item): ?>
-                <p><?php echo $spec_item['spec_heading']; ?></p>
-                <?php endforeach; ?>
+                <?php if($spec['specification_item']): ?>
+                    <?php foreach($spec['specification_item'] as $spec_item): ?>
+                        <p><?php echo $spec_item['spec_heading']; ?></p>
+                    <?php endforeach; ?>
+                <?php endif; ?>
             </div>
 
         </div>
