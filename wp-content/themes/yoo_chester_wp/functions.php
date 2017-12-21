@@ -68,3 +68,6 @@ function woocommerce_product_contact_form7_tab(){
 }
 
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 48;' ), 20 );
+
+//https://contactform7.com/configuration-validator-faq/#from-email-in-site-domain
+add_filter( 'wpcf7_validate_configuration', '__return_false' );
