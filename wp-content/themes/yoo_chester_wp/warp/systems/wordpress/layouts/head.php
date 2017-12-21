@@ -6,7 +6,7 @@
 <?php if (isset($error)): ?>
 <title><?php echo $error; ?> - <?php echo $title; ?></title>
 <?php else: ?>
-<title><?php echo "Kokoda Caravans Sunshine Coast - Authorised Kokoda Dealership";//wp_title('&raquo;', true, 'right'); ?></title>
+<title><?php wp_title('&raquo;', true, 'right'); ?></title>
 <?php endif; ?>
 <link rel="shortcut icon" href="<?php echo $this['path']->url('theme:favicon.ico');?>">
 <link rel="apple-touch-icon-precomposed" href="<?php echo $this['path']->url('theme:apple_touch_icon.png'); ?>">
