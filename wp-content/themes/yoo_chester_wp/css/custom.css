@@ -142,3 +142,10 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 47px;	padding: 0;}
 .uk-nav-navbar > li > a:hover, .uk-nav-navbar > li > a:focus{color: #000;}
 
 /******Main Navigation Style - ending ********/
+
+
+.uk-button-success:hover, .uk-button-success:focus{opacity: 0.8; background-color: #1760ad;color: #ffffff;border-color: transparent;}
+
+
+.uk-button-primary{background-color: #1760ad;color: #FFFFFF;}
+.uk-button-primary:hover, .uk-button-primary:focus{background-color: #356fad;color: #FFFFFF;}
