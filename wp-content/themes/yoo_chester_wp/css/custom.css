@@ -143,9 +143,17 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 47px;	padding: 0;}
 
 /******Main Navigation Style - ending ********/
 
-
+.uk-button-success{border-radius: 0;}
 .uk-button-success:hover, .uk-button-success:focus{opacity: 0.8; background-color: #1760ad;color: #ffffff;border-color: transparent;}
 
-
-.uk-button-primary{background-color: #1760ad;color: #FFFFFF;}
+.uk-icon-small{border-radius: 0; background-color: #404040;}
+.uk-button-primary{background-color: #1760ad;color: #FFFFFF;border-radius: 0;}
 .uk-button-primary:hover, .uk-button-primary:focus{background-color: #356fad;color: #FFFFFF;}
+
+
+
+/***customize the style of range at price slider **/
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range{background: #313233;}
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle{border:1px solid #404040; background:#fff;}
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content, .woocommerce-page .widget_price_filter .price_slider_wrapper .ui-widget-content{background: #c7c5c5;}
