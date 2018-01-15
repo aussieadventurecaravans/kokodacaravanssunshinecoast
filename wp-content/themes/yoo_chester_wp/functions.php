@@ -64,7 +64,7 @@ function woocommerce_product_tabs_contact_form7($tabs){
 // our tab's callback...
 function woocommerce_product_contact_form7_tab(){
 	// do the thing zhu li! Let's echo our shortcode for contact form 7
-	echo do_shortcode('[contact-form-7 id="104" title="Contact us"]');
+	echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="true"]');
 }
 
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 48;' ), 20 );
