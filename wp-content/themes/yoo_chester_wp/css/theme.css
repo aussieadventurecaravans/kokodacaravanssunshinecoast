@@ -11607,24 +11607,6 @@ svg#tm-logo-footer > path {
 {
 	margin-left:25px;
 }
-
-.phone_box:before {
-     position: relative;
-        bottom: -2px;
-    color: #FFFFFF;
-    left: -12px;
-    float: left;
-    content: "\f095";
-    font-family: FontAwesome;
-    font-size: 21px;
-    display: block;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .contact_box, .phone_box
 {
 	float:left;

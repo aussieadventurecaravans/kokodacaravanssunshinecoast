@@ -103,7 +103,8 @@ div#tm-top-nav div.top-middle img{height:113px;margin-top: 27px;margin-left: 10p
 .address_box_icon{float:right;margin: 0;}
 .address_box_icon:before{display: none}
 .phone_box{float:right;margin:0;font-size: 28px;line-height:1.2;}
-.phone_box:before {
+.phone_box .phone-icon{font-family: FontAwesome;}
+/*.phone_box:before {
 	position: relative;
 	bottom: -2px;
 	color: #FFFFFF;
@@ -118,7 +119,7 @@ div#tm-top-nav div.top-middle img{height:113px;margin-top: 27px;margin-left: 10p
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
+}*/
 .tm-toolbar{background:#000;}
 .phone_contact_detail{margin: 46px 0 0 111px }
 
@@ -157,3 +158,21 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 54px;	padding: 0;}
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range{background: #313233;}
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle{border:1px solid #404040; background:#fff;}
 .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content, .woocommerce-page .widget_price_filter .price_slider_wrapper .ui-widget-content{background: #c7c5c5;}
+
+
+@media only screen and (max-width: 768px)
+{
+	#tm-top-nav .top-left .uk-panel,#tm-top-nav .top-middle .widget_text
+	{
+		text-align: center;
+	}
+	#tm-top-nav .top-right .phone_contact_detail
+	{
+		margin:0 ;
+		text-align: center;
+	}
+	#tm-top-nav .top-right .phone_contact_detail .uk-panel .address_box_icon,
+	#tm-top-nav .top-right .phone_contact_detail .uk-panel .phone_box{float:none;}
+	#tm-top-nav .top-right .phone_contact_detail .uk-panel .phone_box:before{ left: 140px;}
+}
+
