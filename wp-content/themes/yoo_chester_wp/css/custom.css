@@ -144,11 +144,11 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 54px;	padding: 0;}
 .uk-nav-dropdown > li.uk-active > a, .uk-nav-navbar > li.uk-active > a{color: #000;}
 /******Main Navigation Style - ending ********/
 
-.uk-button-success{border-radius: 0;}
+.uk-button-success{border-radius: 0; background-color: #4885ed}
 .uk-button-success:hover, .uk-button-success:focus{opacity: 0.8; background-color: #1760ad;color: #ffffff;border-color: transparent;}
 
 .uk-icon-small{border-radius: 0; background-color: #404040;}
-.uk-button-primary{background-color: #1760ad;color: #FFFFFF;border-radius: 0;}
+.uk-button-primary{background-color: #4885ed;color: #FFFFFF;border-radius: 0;}
 .uk-button-primary:hover, .uk-button-primary:focus{background-color: #356fad;color: #FFFFFF;}
 
 
@@ -176,3 +176,4 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 54px;	padding: 0;}
 	#tm-top-nav .top-right .phone_contact_detail .uk-panel .phone_box:before{ left: 140px;}
 }
 
+.uk-block-primary {	background: #4885ed;}
