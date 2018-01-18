@@ -175,5 +175,9 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 54px;	padding: 0;}
 	#tm-top-nav .top-right .phone_contact_detail .uk-panel .phone_box{float:none;}
 	#tm-top-nav .top-right .phone_contact_detail .uk-panel .phone_box:before{ left: 140px;}
 }
-
+.btn_submit input[type="submit"]{border-radius: 0px;}
 .uk-block-primary {	background: #4885ed;}
+.wpcf7-submit {background-color: #4885ed;}
+.wpcf7-submit:hover{background-color: #356fad;color: #FFFFFF;}
+.gform_wrapper .gform_button:hover{background-color: #356fad;color: #FFFFFF;}
+.gform_wrapper .gform_button{background-color: #4885ed;}
