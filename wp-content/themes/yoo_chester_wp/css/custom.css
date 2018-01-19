@@ -145,12 +145,12 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 54px;	padding: 0;}
 /******Main Navigation Style - ending ********/
 
 .uk-button-success{border-radius: 0; background-color: #4885ed}
-.uk-button-success:hover, .uk-button-success:focus{opacity: 0.8; background-color: #1760ad;color: #ffffff;border-color: transparent;}
+.uk-button-success:hover, .uk-button-success:focus{opacity: 0.8;background-color: #4885ed;color: #ffffff; border-color: transparent;}
 
 .uk-icon-small{border-radius: 0; background-color: #000;width: 40px; height:40px}
 .uk-icon-small:hover {background-color: #000;}
 .uk-button-primary{background-color: #4885ed;color: #FFFFFF;border-radius: 0;}
-.uk-button-primary:hover, .uk-button-primary:focus{background-color: #356fad;color: #FFFFFF;}
+.uk-button-primary:hover, .uk-button-primary:focus{background-color: #6c9cec;color: #ffffff;}
 
 
 
@@ -190,4 +190,12 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 54px;	padding: 0;}
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce-page .widget_price_filter .ui-slider .ui-slider-range
 {
 	background-color: #4885ed;
+}
+
+.woocommerce.widget_product_categories ul.product-categories > li > a, .woocommerce-page.widget_product_categories ul.product-categories > li > a {
+	color: #4885ed;
+}
+.woocommerce .thumbnails .owl-nav .owl-prev, .woocommerce .thumbnails .owl-nav .owl-next
+{
+	color: #4885ed;
 }
