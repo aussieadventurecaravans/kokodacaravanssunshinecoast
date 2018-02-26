@@ -1925,7 +1925,7 @@ ul.uk-nav-sub .uk-nav-header {
 .uk-nav-offcanvas > .uk-open > a,
 html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover,
 html:not(.uk-touch) .uk-nav-offcanvas > li > a:focus {
-  background: rgb(21, 87, 156);
+  /*background: rgb(21, 87, 156);*/
   color: #ffffff;
   /* 2 */
   outline: none;
