@@ -27,7 +27,7 @@ global $product;
 
 	<p class="price"><?php echo $product->get_price_html(); ?>
         <?php if($product->get_price_html() !== ''): ?>
-            <i style="color:#4885ed;font-size: 15px"> Drive Away</i>
+            <span style="color:#8f8f8f;font-size: 15px;font-weight: 400;">Drive Away</span>
         <?php endif; ?>
     </p>
 

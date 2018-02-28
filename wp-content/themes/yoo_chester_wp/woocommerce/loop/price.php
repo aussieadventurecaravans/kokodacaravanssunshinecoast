@@ -24,6 +24,6 @@ global $product;
 ?>
 
 <?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="price"><?php echo $price_html; ?>  <i style="color:#4885ed;font-size: 15px;font-weight: 400;">Drive Away</i></span>
+	<span class="price"><?php echo $price_html; ?>  <span style="color:#8f8f8f;font-size: 15px;font-weight: 400;">Drive Away</span></span>
 
 <?php endif; ?>

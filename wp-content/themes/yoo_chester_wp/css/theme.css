@@ -1935,8 +1935,8 @@ html:not(.uk-touch) .uk-nav-offcanvas > li > a:focus {
  * `html .uk-nav` needed for higher specificity to override hover
  */
 html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
-  background: #15579c;
-  color: #ffffff;
+  background: #fff;
+  color: #000;
 }
 /*
  * Sub-object: `uk-nav-header`
