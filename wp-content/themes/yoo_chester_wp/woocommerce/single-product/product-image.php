@@ -50,8 +50,13 @@ global $post, $product;
 		do_action( 'woocommerce_product_thumbnails' );
 
 	?>
+    <?php
 
-    <?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
+    $stock_status = get_post_meta( $product->get_id(), '_stock_status', true );
+
+    ?>
+
+    <?php if ( 'outofstock' == $stock_status ) : ?>
         <div class="sold-badge"><?php _e( 'Sold', 'woocommerce' ); ?></div>
     <?php endif; ?>
 </div>
