@@ -199,3 +199,22 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 54px;	padding: 0;}
 {
 	color: #4885ed;
 }
+
+
+
+.woocommerce img.uk-margin-bottom{
+	width: 100%;
+	position: relative;
+	left: -30px;
+	margin-bottom: 0px !important;
+	top:-25px;
+}
+.woocommerce .tm-block-bottom-d p.logo {
+	margin: 0px 0 20px 10px;
+	width: auto;
+}
+.woocommerce .tm-block-bottom-d .social-icons
+{
+	padding-left: 30px;
+	margin-top: 30px
+}
