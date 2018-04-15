@@ -57,6 +57,16 @@ global $post, $product;
     ?>
 
     <?php if ( 'outofstock' == $stock_status ) : ?>
-        <div class="sold-badge"><?php _e( 'Sold', 'woocommerce' ); ?></div>
+    <script type="text/javascript">
+        jQuery(document).ready(function($){
+                var badge_element = ' <div class="sold-badge"> Sold </div>';
+
+                $('.woocommerce-main-image.zoom img.wp-post-image').after(function(){
+                    return badge_element;
+                });
+        });
+
+    </script>
+
     <?php endif; ?>
 </div>

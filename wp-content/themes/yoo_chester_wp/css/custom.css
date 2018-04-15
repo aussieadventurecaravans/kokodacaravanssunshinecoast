@@ -218,16 +218,32 @@ div#tm-bottom-d .social-icons
 	padding-left: 30px;
 	margin-top: 30px
 }
-
-
+.single-product div.images
+{
+	position: relative;
+}
 .single-product div.images div.sold-badge{
 	position: absolute;
-	top: 251px;
+	bottom: 30.5%;
 	background-color: rgb(255, 178, 0);
 	color: #fff;
 	font-size: .875rem;
 	padding: .25rem .5rem;
 	letter-spacing: 1px;
+}
+@media only screen and (max-width: 1284px)
+{
+	.single-product div.images div.sold-badge{
+
+	}
+
+}
+@media only screen and (max-width: 768px)
+{
+	.single-product div.images div.sold-badge{
+
+	}
+
 }
 .wp-product-archive ul.products li.product div.sold-badge{
 	position: absolute;
