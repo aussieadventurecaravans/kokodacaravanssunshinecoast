@@ -74,4 +74,22 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     <?php if ( 'outofstock' == $stock_status ) : ?>
         <div class="sold-badge"><?php _e( 'Sold', 'woocommerce' ); ?></div>
     <?php endif; ?>
+
+
+
+    <?php if ( 'outofstock' == $stock_status ) : ?>
+        <script type="text/javascript">
+            jQuery(document).ready(function($){
+                var badge_element = ' <div class="sold-badge"> Sold </div>';
+
+                $('.woocommerce-main-image.zoom img.wp-post-image').after(function(){
+                    return badge_element;
+                });
+            });
+
+        </script>
+
+    <?php endif; ?>
+
+
 </li>
