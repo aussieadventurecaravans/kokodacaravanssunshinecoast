@@ -252,7 +252,6 @@ div#tm-bottom-d .social-icons
 }
 .wp-product-archive ul.products li.product div.sold-badge{
 	position: absolute;
-	bottom: 24%;
 	background-color: rgb(255, 178, 0);
 	color: #fff;
 	font-size: .875rem;
@@ -262,6 +261,6 @@ div#tm-bottom-d .social-icons
 @media only screen and (max-width: 1284px)
 {
 	.wp-product-archive ul.products li.product div.sold-badge{
-		bottom: unset;
+		
 	}
 }
