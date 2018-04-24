@@ -41,15 +41,19 @@ $events = get_posts($argsEvents);
                     $event_title = $event->post_title;
 
                     $event_content = $event->post_content;
+
+                    $website = get_field('website',$event->ID);
                     ?>
                 <?php if(!empty($event_image)): ?>
                     <p>
-                        <img class="alignnone size-full wp-image-1904" src="<?php echo $event_image[0]; ?>" alt="" width="408" height="190"/>
+                        <a href="<?php echo $website; ?>">
+                            <img class="alignnone size-full wp-image-1904" src="<?php echo $event_image[0]; ?>" alt="" width="408" height="190"/>
+                        </a>
                     </p>
                 <?php endif; ?>
                 <?php if(!empty($event_title)): ?>
 
-                    <h4><?php echo $event_title; ?></h4>
+                    <h4><a href="<?php echo $website; ?>"><?php echo $event_title; ?></a></h4>
 
                 <?php endif; ?>
 
@@ -67,7 +71,7 @@ $events = get_posts($argsEvents);
                 <?php if(!empty($event_date_start) && !empty($event_date_end)): ?>
 
                     <p>Start Date: <?php echo $event_date_start; ?></p>
-                    <p>End Date: <?php echo $event_date_end; ?></p>
+                    <p>Last Date: <?php echo $event_date_end; ?></p>
                 <?php endif; ?>
 
 
