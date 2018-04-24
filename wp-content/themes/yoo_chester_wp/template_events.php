@@ -21,7 +21,7 @@ $argsEvents = array(
 
     'post_status' => 'publish',
 
-    'order' => 'DESC',
+    'order' => 'ASC',
 
     'posts_per_page'   =>9999,
 
