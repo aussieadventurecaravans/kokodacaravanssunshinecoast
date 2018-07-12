@@ -71,3 +71,14 @@ add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 48;' ), 20 )
 
 //https://contactform7.com/configuration-validator-faq/#from-email-in-site-domain
 add_filter( 'wpcf7_validate_configuration', '__return_false' );
+
+
+/** add filter to customize the sale icon at product image */
+
+add_filter('woocommerce_sale_flash','woocommerce_sale_flash_customize');
+function woocommerce_sale_flash_customize($html)
+{
+    $html = '<span class="onsale">' . __( 'Sale', 'woocommerce' ) . '</span>';
+
+    return $html;
+}

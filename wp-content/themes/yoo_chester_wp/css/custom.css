@@ -200,7 +200,17 @@ div#main-navbar-container .uk-container nav.uk-navbar{height: 54px;	padding: 0;}
 	color: #4885ed;
 }
 
-
+.woocommerce ul.products li.product .onsale, .woocommerce-page ul.products li.product .onsale {
+	right: auto;
+	left: 0;
+	top: 0;
+	min-height: 0;
+	line-height: 24px;
+	font-size: .875rem;
+	margin: 0;
+	letter-spacing: 1px;
+	border-radius: 0;
+}
 
 div#tm-bottom-d img.uk-margin-bottom{
 	width: 100%;
